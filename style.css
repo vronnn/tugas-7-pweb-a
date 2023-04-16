@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #b4c2c9;
+  padding: 2rem;
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.sidebar {
+  height: 100%;
+  min-width: 247px;
+  background-color: #e1e3e3;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.sidebar-nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  margin-bottom: 3rem;
+}
+
+.sideitem ul li {
+  list-style: none;
+  margin: 15px 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid;
+  border-radius: 1rem;
+}
+
+hr {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.sideitem ul li:hover {
+  background-color: #333;
+}
+
+.sideitem ul li:hover a {
+  color: whitesmoke;
+}
+
+.logout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logout a {
+  background-color: #333;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: whitesmoke;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  min-width: calc(100vh - 247px);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  /* background-color: whitesmoke;
+  padding: 2.5rem;
+  border-radius: 1rem; */
+}
+
+.searchbar {
+  background-color: whitesmoke;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+input {
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.searchbar p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.page-expo {
+  background-color: whitesmoke;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.exposure {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expo1 {
+  display: flex;
+  column-gap: 5rem;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-top: 1px solid #b4c2c9;
+  border-bottom: 1px solid #b4c2c9;
+  padding: 0.5rem 0;
+  color: #6b6b6b;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+#dashboard {
+  background-color: #333;
+}
+
+#dashboard a {
+  color: whitesmoke;
+}
+
+.card-list {
+  width: 7rem;
+  position: relative;
+  border: 2px solid;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: #e1e3e3;
+  font-size: 1rem;
+}
+
+.card-list p {
+  text-align: end;
+  padding: 0.5rem 1rem;
+}
+
+.card-list button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: whitesmoke;
+  border-radius: 1.5rem;
+  border: none;
+  height: 100%;
+}
+
+.bottom {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 1rem;
+  padding: 2.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.left {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.right {
+  background-color: #333;
+  color: whitesmoke;
+}
+
+.right-box {
+  width: 80%;
+  height: 100%;
+  background-color: #b4c2c9;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.right a {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.left-box {
+  width: 80%;
+  height: 100%;
+  background-image: url("school.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.left a {
+  padding: 0.6rem 1.2rem;
+  color: whitesmoke;
+  background-color: #333;
+  font-size: 0.9rem;
+  border-radius: 1rem;
+}
